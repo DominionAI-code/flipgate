@@ -1,66 +1,122 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
+  const corePillars = [
+    {
+      title: "God",
+      desc: "Inspiring national reorientation and moral alignment.",
+    },
+    {
+      title: "Law",
+      desc: "Promoting justice, structured community guidelines, and equity.",
+    },
+    {
+      title: "Governance",
+      desc: "Fostering clean leadership and sustainable civic models.",
+    },
+    {
+      title: "Poetry & Education",
+      desc: "Empowering individuals through cultural depth, skills, and opportunities.",
+    },
+  ];
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="w-full min-h-screen bg-white">
+      {/* --- HERO SECTION --- */}
+      <section className="relative bg-[#046A55] text-white py-24 md:py-36 overflow-hidden">
+        {/* Abstract Background Design Elements */}
+        <div className="absolute inset-0 opacity-10 pointer-events-none">
+          <div className="absolute -top-10 -left-10 w-96 h-96 rounded-full border-2 border-white"></div>
+          <div className="absolute bottom-10 right-10 w-80 h-80 rounded-full border-2 border-white"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-3xl">
+            <span className="text-[#00E63A] font-semibold tracking-wider uppercase text-sm block mb-3">
+              Introducing Flipgate Ltd
+            </span>
+            <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+              Inspiring National Reorientation &{" "}
+              <span className="text-[#00E63A]">Sustainable Impact.</span>
+            </h1>
+            <p className="text-lg md:text-xl text-white/90 mb-10 leading-relaxed">
+              We are a purpose-driven organization dedicated to community
+              development, empowering individuals through structural skills, and
+              building a transformative digital ecosystem across Nigeria and
+              beyond.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/volunteers"
+                className="inline-block text-center bg-[#00E63A] text-[#046A55] font-bold px-8 py-4 rounded-md shadow-lg hover:bg-white hover:text-[#046A55] transition-all duration-300"
+              >
+                Join As A Volunteer
+              </Link>
+              <Link
+                href="/about"
+                className="inline-block text-center border-2 border-white text-white font-semibold px-8 py-4 rounded-md hover:bg-white hover:text-[#046A55] transition-all duration-300"
+              >
+                Explore Our Vision
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- CORE PILLARS SECTION --- */}
+      <section className="py-20 bg-[#F4FDF9]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1F2937] mb-4">
+              Our Foundational Pillars
+            </h2>
+            <div className="h-1 w-20 bg-[#00E63A] mx-auto mb-4 rounded"></div>
+            <p className="text-gray-600">
+              The core principles driving our mission towards transformation and
+              societal change.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {corePillars.map((pillar, idx) => (
+              <div
+                key={idx}
+                className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              >
+                <div className="text-xs font-bold text-[#00E63A]/80 tracking-widest uppercase mb-2">
+                  Pillar 0{idx + 1}
+                </div>
+                <h3 className="text-xl font-bold text-[#046A55] mb-3">
+                  {pillar.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {pillar.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* --- BRIEF MISSION TEASER --- */}
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#1F2937] mb-6">
+            Ready to make a sustainable difference?
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+            Phase 1 is laying the technical groundwork for a massive digital
+            framework including crowdfunding, verified training certification,
+            and interactive strategic corporate pipelines.
           </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/contact"
+            className="inline-block text-[#046A55] font-bold hover:text-[#00E63A] underline underline-offset-8 transition-colors"
           >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            Get in Touch With Us &rarr;
+          </Link>
         </div>
-      </main>
+      </section>
     </div>
   );
 }
