@@ -1,25 +1,7 @@
 import Link from "next/link";
+import { programsList } from "@/lib/programs";
 
 export default function Home() {
-  const corePillars = [
-    {
-      title: "God",
-      desc: "Inspiring national reorientation and moral alignment.",
-    },
-    {
-      title: "Law",
-      desc: "Promoting justice, structured community guidelines, and equity.",
-    },
-    {
-      title: "Governance",
-      desc: "Fostering clean leadership and sustainable civic models.",
-    },
-    {
-      title: "Poetry & Education",
-      desc: "Empowering individuals through cultural depth, skills, and opportunities.",
-    },
-  ];
-
   return (
     <div className="w-full min-h-screen bg-white">
       {/* --- HERO SECTION --- */}
@@ -62,7 +44,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      
       {/* --- CORE PILLARS SECTION --- */}
       <section className="py-20 bg-[#F4FDF9]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -78,21 +60,25 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {corePillars.map((pillar, idx) => (
-              <div
-                key={idx}
-                className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            {programsList.map((program) => (
+              <Link
+                key={program.slug}
+                href={`/programs/${program.slug}`}
+                className="group bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col"
               >
                 <div className="text-xs font-bold text-[#00E63A]/80 tracking-widest uppercase mb-2">
-                  Pillar 0{idx + 1}
+                  {program.pillarLabel}
                 </div>
                 <h3 className="text-xl font-bold text-[#046A55] mb-3">
-                  {pillar.title}
+                  {program.navTitle}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {pillar.desc}
+                <p className="text-gray-600 text-sm leading-relaxed flex-grow">
+                  {program.tagline}
                 </p>
-              </div>
+                <span className="mt-4 text-sm font-semibold text-[#046A55] group-hover:text-[#00E63A] transition-colors">
+                  Learn more &rarr;
+                </span>
+              </Link>
             ))}
           </div>
         </div>
