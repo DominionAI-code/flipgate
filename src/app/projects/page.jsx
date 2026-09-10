@@ -43,7 +43,7 @@ export default function Projects() {
           </h1>
           <div className="h-1 w-20 bg-[#00E63A] mx-auto mb-4 rounded"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Explore how FLIPGATE LTD turns structural values into direct,
+            Explore how FLIPE LTD turns structural values into direct,
             sustainable field projects and digital transformation pipelines.
           </p>
         </div>

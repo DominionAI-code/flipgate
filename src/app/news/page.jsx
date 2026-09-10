@@ -3,10 +3,10 @@ import Link from "next/link";
 // Mock data array simulating content retrieved from an API or database
 const dummyArticles = [
   {
-    title: "Launching Phase 1: FLIPGATE's Digital Identity and Vision",
+    title: "Launching Phase 1: FLIPE's Digital Identity and Vision",
     slug: "launching-phase-1-digital-identity",
     excerpt:
-      "Discover how FLIPGATE LTD is establishing a world-class digital ecosystem starting with structural national reorientation platforms.",
+      "Discover how FLIPE LTD is establishing a world-class digital ecosystem starting with structural national reorientation platforms.",
     date: "July 5, 2026",
     category: "Announcements",
   },
@@ -40,7 +40,7 @@ export default function NewsHub() {
           <div className="h-1 w-20 bg-[#00E63A] mx-auto mb-4 rounded"></div>
           <p className="text-gray-600 max-w-xl mx-auto">
             Stay updated with official publications, strategy disclosures, and
-            development stories from FLIPGATE.
+            development stories from FLIPE.
           </p>
         </div>
 

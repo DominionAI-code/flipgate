@@ -30,7 +30,7 @@ export default function Volunteers() {
 *🛠️ Core Skills:* ${formData.skills}
 *📝 Motivation:* ${formData.reason}
 ----------------------------------
-_Sent via FLIPGATE Web Portal_`;
+_Sent via FLIPE Web Portal_`;
 
     window.open(
       `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(messageTemplate)}`,
@@ -135,7 +135,7 @@ _Sent via FLIPGATE Web Portal_`;
 
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">
-                Why do you want to join FLIPGATE?
+                Why do you want to join FLIPE?
               </label>
               <textarea
                 name="reason"

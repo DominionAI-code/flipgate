@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Brand identity */}
         <div>
           <h3 className="text-xl font-bold tracking-wider mb-4">
-            FLIPGATE<span className="text-[#00E63A]">.</span>
+            FLIPE<span className="text-[#00E63A]">.</span>
           </h3>
           <p className="text-gray-400 text-xs md:text-sm leading-relaxed max-w-xs">
             Purpose-driven organization focused on national reorientation,
@@ -62,7 +62,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
-        &copy; {standardYear} FLIPGATE LTD. All Rights Reserved. Engineered to
+        &copy; {standardYear} FLIPE LTD. All Rights Reserved. Engineered to
         World-Class Standards.
       </div>
     </footer>

@@ -31,6 +31,7 @@ export default async function ProgramPage({ params }) {
 
   const Icon = programIcons[program.slug];
   const otherPrograms = programsList.filter((p) => p.slug !== program.slug);
+  const enrollHref = program.enrollHref || `/enroll?program=${program.slug}`;
 
   return (
     <main className="bg-[#F4FDF9] min-h-screen">
@@ -64,7 +65,7 @@ export default async function ProgramPage({ params }) {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
-                href={`/enroll?program=${program.slug}`}
+                href={enrollHref}
                 className="inline-flex items-center gap-2 bg-[#046A55] hover:bg-[#00E63A] text-white font-semibold px-6 py-3 rounded-lg transition-colors"
               >
                 Enroll in {program.navTitle}
@@ -89,14 +90,20 @@ export default async function ProgramPage({ params }) {
       </section>
 
       <div id="details">
-        {/* Crowdfunding categories */}
-        {program.type === "crowdfunding" && (
+        {/* Optional categories block (only renders if a program defines categories) */}
+        {program.categories && (
           <section className="py-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-2xl font-bold text-[#1F2937] mb-8">
-                Two Ways to Access Funding
+                Ways to Access Funding
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div
+                className={`max-w-6xl mx-auto grid grid-cols-1 gap-8 ${
+                  program.categories.length > 1
+                    ? "md:grid-cols-2"
+                    : "sm:max-w-xl"
+                }`}
+              >
                 {program.categories.map((cat) => (
                   <div
                     key={cat.title}
@@ -218,7 +225,7 @@ export default async function ProgramPage({ params }) {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              href={`/enroll?program=${program.slug}`}
+              href={enrollHref}
               className="inline-flex items-center gap-2 bg-[#00E63A] hover:bg-white hover:text-[#046A55] text-[#046A55] font-semibold px-8 py-3 rounded-lg transition-colors"
             >
               Enroll Now

@@ -15,7 +15,7 @@ export default function Contact() {
 *👤 Sender Name:* ${contactForm.name}
 *💬 Message Body:* ${contactForm.message}
 ----------------------------------
-_Sent via FLIPGATE Web Portal_`;
+_Sent via FLIPE Web Portal_`;
 
     window.open(
       `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(messageTemplate)}`,
@@ -28,9 +28,9 @@ _Sent via FLIPGATE Web Portal_`;
     const messageTemplate = `*🔔 NEW NEWSLETTER SUBSCRIPTION*
 ----------------------------------
 *📧 Email Address:* ${newsletterEmail}
-Please add this address to the FLIPGATE weekly update broadcast lists.
+Please add this address to the FLIPE weekly update broadcast lists.
 ----------------------------------
-_Sent via FLIPGATE Web Portal_`;
+_Sent via FLIPE Web Portal_`;
 
     window.open(
       `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(messageTemplate)}`,
@@ -93,7 +93,7 @@ _Sent via FLIPGATE Web Portal_`;
               Let's Connect
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              FLIPGATE LTD is expanding its horizons to build robust digital
+              FLIPE LTD is expanding its horizons to build robust digital
               infrastructures. Get in touch to learn more about our upcoming
               initiatives, structural updates, and strategic systems.
             </p>

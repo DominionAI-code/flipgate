@@ -15,7 +15,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
             <span className="text-[#00E63A] font-semibold tracking-wider uppercase text-sm block mb-3">
-              Introducing Flipgate Ltd
+              Introducing Flipe Ltd
             </span>
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
               Inspiring National Reorientation &{" "}

@@ -3,9 +3,9 @@ import "@/app/globals.css";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "FLIPGATE LTD | National Reorientation & Social Impact",
+  title: "FLIPE LTD | National Reorientation & Social Impact",
   description:
-    "Official digital platform for FLIPGATE LTD. Inspiring national reorientation, community development, and sustainable social impact.",
+    "Official digital platform for FLIPE LTD. Inspiring national reorientation, community development, and sustainable social impact.",
   icons: {
     icon: "/favicon.png", // Points directly to public/favicon.png
     shortcut: "/favicon.png",

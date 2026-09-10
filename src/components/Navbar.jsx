@@ -28,7 +28,7 @@ export default function Navbar() {
               <div className="relative flex items-center justify-center">
                 <Image
                   src="/logo.png"
-                  alt="FLIPGATE LTD Logo"
+                  alt="FLIPE LTD Logo"
                   width={280}
                   height={100}
                   /* Scaled up significantly: h-16 (64px) on mobile, h-20 (80px) on desktop */
@@ -36,9 +36,6 @@ export default function Navbar() {
                   priority
                 />
               </div>
-              <span className="text-2xl sm:text-3xl font-extrabold tracking-wider text-white">
-                FLIPGATE<span className="text-[#00E63A]">.</span>
-              </span>
             </Link>
           </div>
 

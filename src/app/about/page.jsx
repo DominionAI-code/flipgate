@@ -44,10 +44,10 @@ export default function About() {
             Our Corporate Manifesto
           </span>
           <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-6">
-            About FLIPGATE LTD
+            About FLIPE LTD
           </h1>
           <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
-            FLIPGATE LTD is a purpose-driven organization built to spearhead
+            FLIPE LTD is a purpose-driven organization built to spearhead
             structural national reorientation, advance community development,
             and empower individuals through sustainable, world-class technical
             ecosystems.

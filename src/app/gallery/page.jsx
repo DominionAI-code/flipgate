@@ -34,7 +34,7 @@ export default function Gallery() {
       title: "Strategic Advisory Session",
       type: "Corporate Governance",
       caption:
-        "FLIPGATE executive leaders organizing the operational framework for Phase 2 architectures.",
+        "FLIPE executive leaders organizing the operational framework for Phase 2 architectures.",
       image: "/advisory.png", // Replace with your image file name in public/
     },
     {

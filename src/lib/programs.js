@@ -36,35 +36,26 @@ export const programs = {
     navTitle: "Crowdfunding",
     title: "Crowdfunding",
     tagline: "Promoting justice, structured community guidelines, and equity.",
-    type: "crowdfunding",
+    type: "standard",
+    enrollHref: "/enroll/crowdfunding",
     heroDesc:
-      "Access to capital is one of the biggest barriers to individual and community progress. Our Crowdfunding pillar exists to close that gap through two structured, transparent pathways.",
-    categories: [
-      {
-        title: "Personal Crowdfunding",
-        desc: "Support for individuals raising funds for a specific, verifiable personal need — medical bills, education, small business capital, housing, or emergency relief.",
-        points: [
-          "Guided application and verification process to ensure legitimacy",
-          "A clear, honest campaign narrative built with our team",
-          "Transparent tracking so contributors can see how funds are used",
-          "Ongoing support until the funding goal or need is resolved",
-        ],
-      },
-      {
-        title: "Sourcing Money",
-        desc: "Structured support for groups, cooperatives, and community projects that need to source funding from multiple channels — donors, grants, partner organizations, and diaspora networks.",
-        points: [
-          "Identification of suitable funding sources and partners",
-          "Support with proposal writing and pitch preparation",
-          "Introductions to our network of partner organizations",
-          "Accountability structures to maintain donor trust over time",
-        ],
-      },
-    ],
+      "Access to capital is one of the biggest barriers to community progress. Our Crowdfunding pillar exists to close that gap by structurally sourcing money and resources for verified, worthwhile projects.",
     sections: [
       {
+        heading: "What Sourcing Money Means",
+        body: "We provide structured support for individuals, groups, cooperatives, and community projects that need to source funding or resources from multiple channels — donors, grants, partner organizations, and diaspora networks.",
+      },
+      {
+        heading: "What We Help With",
+        body: "This includes identifying suitable funding sources and partners, supporting proposal writing and pitch preparation, making introductions to our network of partner organizations, and maintaining accountability structures to preserve donor trust over time.",
+      },
+      {
         heading: "Our Approach",
-        body: "Every campaign under this pillar is reviewed for legitimacy and structured around equity and justice — no one is turned away for lacking connections, and no campaign proceeds without transparency safeguards for contributors.",
+        body: "Every project under this pillar is reviewed for legitimacy and structured around equity and justice — no one is turned away for lacking connections, and no project proceeds without transparency safeguards for contributors.",
+      },
+      {
+        heading: "Who It's For",
+        body: "Open to individuals with a personal project, and to groups or cooperatives pursuing a shared community initiative that requires outside funding or resources to move forward.",
       },
     ],
   },

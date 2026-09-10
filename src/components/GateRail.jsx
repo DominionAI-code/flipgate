@@ -1,5 +1,5 @@
 // components/GateRail.jsx
-// Decorative vertical bars echoing the Flipgate logo mark. Purely visual.
+// Decorative vertical bars echoing the Flipe logo mark. Purely visual.
 
 export default function GateRail({ className = "" }) {
   return (
