@@ -96,6 +96,96 @@ export default function About() {
         </div>
       </section>
 
+      {/* --- MEET OUR TEAM --- */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Heading */}
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <span className="text-[#046A55] font-bold uppercase tracking-widest text-xs">
+              The People Behind the Mission
+            </span>
+
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1F2937] mt-3 mb-4">
+              Meet Our Team
+            </h2>
+
+            <div className="h-1 w-16 bg-[#00E63A] mx-auto mb-6"></div>
+
+            <p className="text-gray-600 leading-relaxed">
+              FLIPE LTD is driven by a multidisciplinary team committed to
+              building meaningful solutions, empowering communities, and
+              advancing sustainable social and digital development.
+            </p>
+          </div>
+
+          {/* Team Members */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {[
+              {
+                name: "Kemi",
+                role: "Executive & Programme Lead",
+                image: "/kemi.png",
+                bio: "Provides strategic direction and supports the development and execution of initiatives that advance FLIPE LTD's social impact objectives.",
+              },
+              {
+                name: "Eri",
+                role: "Operations & Partnerships",
+                image: "/eri.png",
+                bio: "Supports operational coordination and stakeholder engagement, helping transform organizational objectives into effective programmes and partnerships.",
+              },
+              {
+                name: "Ayooluwa John Adebisi",
+                role: "Technology & Digital Strategy Lead",
+                image: "/ayo.png",
+                bio: "Leads the organization's technology strategy and digital infrastructure, driving the development of scalable solutions that support FLIPE LTD's long-term objectives.",
+              },
+            ].map((member, index) => (
+              <div
+                key={index}
+                className="group bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+              >
+                {/* Image */}
+                <div className="relative bg-[#F4FDF9] overflow-hidden">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-[360px] object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  />
+
+                  {/* Accent */}
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#00E63A]"></div>
+                </div>
+
+                {/* Content */}
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-bold text-[#1F2937] mb-1">
+                    {member.name}
+                  </h3>
+
+                  <p className="text-[#046A55] text-sm font-semibold mb-4">
+                    {member.role}
+                  </p>
+
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {member.bio}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Team Statement */}
+          <div className="max-w-3xl mx-auto mt-14 text-center">
+            <p className="text-sm md:text-base text-gray-500 leading-relaxed">
+              Our strength lies in collaboration. By bringing together strategic
+              leadership, operational expertise, community engagement, and
+              technology, we work collectively to create solutions that are
+              practical, scalable, and built for lasting impact.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* --- CORE CORPORATE VALUES --- */}
       <section className="py-20 bg-[#F4FDF9]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
